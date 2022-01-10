@@ -1,0 +1,199 @@
+{
+    "services": [
+      {
+        "id": 1,
+        "name": "Graphic Design",
+        "description": "Graphic design builds an emotional connection with your customers.  I care about the quality of a product as well as visial identity.  I am able to create a design that will make your brand stand out from other competitors.",
+        "type": [
+            {
+                "id": 1,
+                "name": "Digital Logo",
+                "image": "images/2.png"
+              },
+              {
+                "id": 2,
+                "name": "Worksheet & Planner Templates",
+                "image": "images/2.png"
+              },
+              {
+                "id": 3,
+                "name": "Calender Templates",
+                "image": "images/2.png"
+              },
+              {
+                "id": 4,
+                "name": "Digital Photo Collages",
+                "image": "images/2.png"
+              },
+              {
+                "id": 5,
+                "name": "Digital Postable Prints & Photo Cards",
+                "image": "images/2.png"
+              },
+              {
+                "id": 6,
+                "name": "Mugs",
+                "image": "images/2.png"
+              },
+              {
+                "id": 7,
+                "name": "T-Shirts",
+                "image": "images/2.png"
+              }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Papercrafts",
+        "description": "I am capable of prducting mutiple forms of papercraft.",
+        "type": [
+            {
+                "id": 1,
+                "name": "Business Cards",
+                "image": "images/2.png"
+              },
+              {
+                "id": 2,
+                "name": "Stationary",
+                "image": "images/2.png"
+              },
+              {
+                "id": 3,
+                "name": "Postcards",
+                "image": "images/2.png"
+              },
+              {
+                "id": 3,
+                "name": "Worksheet & Planner Note Paper",
+                "image": "images/2.png"
+              },
+              {
+                "id": 4,
+                "name": "Small & Large Prints",
+                "image": "images/2.png"
+              },
+              {
+                "id": 5,
+                "name": "Invitations & Cards: Birthdays, Weddings, Get Well, Greetings, Christmas, New Year, etc.",
+                "image": "images/2.png"
+              },
+              {
+                "id": 6,
+                "name": "Bookmarks",
+                "image": "images/2.png"
+              },
+              {
+                "id": 7,
+                "name": "Book & CD Covers",
+                "image": "images/2.png"
+              },
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Stickers",
+        "description": "I make stickers by blah.",
+        "type": [
+            {
+                "id": 1,
+                "name": "Paper",
+                "image": "images/2.png"
+              },
+              {
+                "id": 2,
+                "name": "Static Cling Vinyl",
+                "image": "images/2.png"
+              },
+              {
+                "id": 3,
+                "name": "Clear Vinyl",
+                "image": "images/2.png"
+              },
+              {
+                "id": 3,
+                "name": "Vinyl",
+                "image": "images/2.png"
+              },
+              {
+                "id": 4,
+                "name": "Die-Cut",
+                "image": "images/2.png"
+              },
+              {
+                "id": 5,
+                "name": "Bumper",
+                "image": "images/2.png"
+              },
+              {
+                "id": 5,
+                "name": "Logo",
+                "image": "images/2.png"
+              },
+              {
+                "id": 5,
+                "name": "Sheets",
+                "image": "images/2.png"
+              }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Jewelry",
+        "description": "I make blah kinds of jewelry",
+        "type": [
+            {
+                "id": 1,
+                "name": "Necklaces",
+                "image": "images/2.png"
+              },
+              {
+                "id": 2,
+                "name": "Earings",
+                "image": "images/2.png"
+              },
+              {
+                "id": 3,
+                "name": "Bracelets",
+                "image": "images/2.png"
+              },
+              {
+                "id": 3,
+                "name": "Anklets",
+                "image": "images/2.png"
+              }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Sewing",
+        "description": "I sew stuff",
+        "type": [
+            {
+                "id": 1,
+                "name": "Masks",
+                "image": "images/2.png"
+              },
+              {
+                "id": 2,
+                "name": "Scrunchies: Cotton, Satin, Silk, Velvet",
+                "image": "images/2.png"
+              },
+              {
+                "id": 3,
+                "name": "Tote Bags",
+                "image": "images/2.png"
+              },
+              {
+                "id": 3,
+                "name": "Fanny Packs",
+                "image": "images/2.png"
+              },
+              {
+                "id": 4,
+                "name": "Alterations & Hems",
+                "image": "images/2.png"
+              }
+        ]
+      }
+    ]
+  }
