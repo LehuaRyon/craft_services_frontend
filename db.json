@@ -170,7 +170,7 @@
         "type": [
             {
                 "id": 1,
-                "name": "Masks",
+                "name": "Masks: Cotton, Silk",
                 "image": "images/2.png"
               },
               {
@@ -180,7 +180,7 @@
               },
               {
                 "id": 3,
-                "name": "Tote Bags",
+                "name": "Tote Bags: Duck Canvas",
                 "image": "images/2.png"
               },
               {
