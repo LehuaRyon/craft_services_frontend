@@ -21,7 +21,7 @@ function App() {
       </header> */}
       <Router>
         <Navbar />
-        <Header />
+        <Header storeName="Mariah Ryon's Craft Services"/>
         <Switch>
           {/* <Route path="/services/graphicdesign">
             <GraphicDesign />
