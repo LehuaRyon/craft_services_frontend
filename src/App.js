@@ -1,8 +1,17 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import {ServicesList} from './containers/ServicesList'
+import {ServicesContainer} from './containers/ServicesContainer'
+import {ServiceCard} from './components/services/ServiceCard'
 import {Home} from './components/navigation/Home'
+import {About} from './components/navigation/About'
+import {Commissions} from './components/navigation/Commissions'
+import {Contact} from './components/navigation/Contact'
+import {Gallery} from './components/navigation/Gallery'
+import {Shop} from './components/navigation/Shop'
+import {Navbar} from './components/layout/Navbar'
+import {Header} from './components/layout/Header'
+import {Footer} from './components/layout/Footer'
 
 function App() {
   return (
@@ -14,8 +23,16 @@ function App() {
         <Navbar />
         <Header />
         <Switch>
+          {/* <Route path="/services/graphicdesign">
+            <GraphicDesign />
+          </Route> */}
+
+          <Route path="/services/:id">
+            <ServiceCard />
+          </Route>
+          
           <Route path="/services">
-            <ServicesList />
+            <ServicesContainer />
           </Route>
 
           <Route path="/shop">
@@ -41,8 +58,8 @@ function App() {
           <Route path="/">
             <Home />
           </Route>
-
         </Switch>
+        <Footer />
       </Router>
     </div>
   );
