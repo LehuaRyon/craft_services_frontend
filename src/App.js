@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import {ServicesList} from './containers/ServicesList'
+import {Home} from './components/navigation/Home'
 
 function App() {
   return (
@@ -11,10 +13,35 @@ function App() {
       <Router>
         <Navbar />
         <Header />
-          <Route>
-            
-          </Route>
         <Switch>
+          <Route path="/services">
+            <ServicesList />
+          </Route>
+
+          <Route path="/shop">
+            <Shop />
+          </Route>
+
+          <Route path="/gallery">
+            <Gallery />
+          </Route>
+
+          <Route path="/contact">
+            <Contact />
+          </Route>
+
+          <Route path="/commissions">
+            <Commissions />
+          </Route>
+
+          <Route path="/about">
+            <About />
+          </Route>
+
+          <Route path="/">
+            <Home />
+          </Route>
+
         </Switch>
       </Router>
     </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const ServicesContainer = () => {
+export const Gallery = () => {
     return (
         <div>
             
