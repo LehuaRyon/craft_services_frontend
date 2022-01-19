@@ -28,6 +28,15 @@
   color: #61dafb;
 }
 
+body {
+  text-align: left;
+  color: darkgreen;
+  background-color: darkgreen;
+  /* background-image: url("/images/fern.jpg"); */
+  background-image: url("https://images.pexels.com/photos/2748756/pexels-photo-2748756.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-size:100% auto;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
