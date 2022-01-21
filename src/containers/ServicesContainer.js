@@ -10,7 +10,7 @@ import {ServicesFilter} from '../components/services/ServicesFilter'
 export const ServicesContainer = () => {
     const[services, setServices] = useState([])
 
-    // const fetchData = () => {
+    // const fetchServices = () => {
     //     fetch("http://localhost:3001/services")
     //     // fires http request, get promise
     //     .then(response => response.json())
@@ -20,24 +20,30 @@ export const ServicesContainer = () => {
     //     // when promise resolves, then get data wanted
     // }
 
-    const fetchData = async () => {
-        const resp = await fetch("http://localhost:3001/services")
-        //  try to fetch something & wait until having something befoe storing inside the resp variable
-        const data = await resp.json()
-        setServices(data)
+    const fetchServices = async () => {
+        // should always have a catch
+        try {
+            const resp = await fetch("http://localhost:3001/services")
+            //  try to fetch something & wait until having something befoe storing inside the resp variable
+            const data = await resp.json()
+            setServices(data)
+        } catch (error) {
+            alert(error)
+        }
+        
     }
 
     useEffect(() => {
         // hook, function, takes 2 arguments
         // automatically sync
         // like componentDidMount
-        fetchData()
+        fetchServices()
     }, [])
 
     return (
         <div>
             <ServicesFilter />
-            <ServicesList />
+            <ServicesList services={services}/>
         </div>
     )
 }
