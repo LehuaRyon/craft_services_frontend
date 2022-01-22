@@ -8,7 +8,11 @@ export const ServicesList = ({services}) => {
 
     return (
         <div>
-            {servicesCards}
+            <h2>Services Offered</h2>
+            <div>
+            {/* <div style={{display: "flex", flexWrap: "wrap"}}> */}
+                {servicesCards}
+            </div>
         </div>
     )
 }
