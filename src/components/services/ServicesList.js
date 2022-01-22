@@ -1,5 +1,6 @@
 import React from 'react'
 import {ServiceCard} from './ServiceCard'
+import Card from '@mui/material/Card';
 
 export const ServicesList = ({services}) => {
     const servicesCards = services.map(service => <ServiceCard key={service.id} service={service} />)
@@ -9,10 +10,11 @@ export const ServicesList = ({services}) => {
     return (
         <div>
             <h2>Services Offered</h2>
-            <div>
+            {/* <div> */}
             {/* <div style={{display: "flex", flexWrap: "wrap"}}> */}
-                {servicesCards}
-            </div>
+                {/* {servicesCards}
+            </div> */}
+            <Card variant="outlined">{servicesCards}</Card>
         </div>
     )
 }

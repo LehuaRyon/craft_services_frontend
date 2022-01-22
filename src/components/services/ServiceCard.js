@@ -1,15 +1,65 @@
+// import React from 'react'
+// import {TypeCard} from './TypeCard'
+// import './Service.css'
+
+// export const ServiceCard = ({service}) => {
+//      const typeCard = service.type.map(type => <TypeCard key={type.id} type={type} />)
+
+//     return (
+//         <div className="service-card">
+//             <h3>{service.name}</h3>
+//             <h4>{service.description}</h4>
+//             {typeCard}
+//         </div>
+//     )
+// }
+
 import React from 'react'
 import {TypeCard} from './TypeCard'
-import './Service.css'
+import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
 
 export const ServiceCard = ({service}) => {
      const typeCard = service.type.map(type => <TypeCard key={type.id} type={type} />)
 
+     const bull = (
+  <Box
+    component="span"
+    sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
+  >
+    •
+  </Box>
+);
+
+const card = (
+  <React.Fragment>
+    <CardContent>
+      {/* <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+        Word of the Day
+      </Typography> */}
+      <Typography variant="h5" component="div">
+        {service.name}
+      </Typography>
+      <Typography sx={{ mb: 1.5 }} color="text.secondary">
+        {service.description}
+      </Typography>
+      <Typography variant="body2">
+        {typeCard}
+      </Typography>
+    </CardContent>
+    {/* <CardActions>
+      <Button size="small">Learn More</Button>
+    </CardActions> */}
+  </React.Fragment>
+);
+
     return (
-        <div className="service-card">
-            <h3>{service.name}</h3>
-            <h4>{service.description}</h4>
-            {typeCard}
-        </div>
+        <Box sx={{ minWidth: 275 }}>
+            <Card variant="outlined">{card}</Card>
+        </Box>
     )
 }
