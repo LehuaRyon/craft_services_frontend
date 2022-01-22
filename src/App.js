@@ -2,7 +2,8 @@
 import './App.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import {ServicesContainer} from './containers/ServicesContainer'
-import {ServiceCard} from './components/services/ServiceCard'
+// import {ServiceCard} from './components/services/ServiceCard'
+import {ServiceShow} from './components/services/ServiceShow'
 import {Home} from './components/navigation/Home'
 import {About} from './components/navigation/About'
 import {Commissions} from './components/navigation/Commissions'
@@ -28,7 +29,8 @@ function App() {
           </Route> */}
 
           <Route path="/services/:id">
-            <ServiceCard />
+            {/* <ServiceCard /> */}
+            <ServiceShow />
           </Route>
           
           <Route path="/services">

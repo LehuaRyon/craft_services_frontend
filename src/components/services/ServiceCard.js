@@ -52,8 +52,7 @@ const card = (
             }}
                 exact
                 // style={style}
-                // to="/services"
-                to={"services/" + id}
+                to={`services/${id}`}
             >{service.name}</NavLink>
       </Typography>
       <Typography sx={{ mb: 1.5 }} color="text.secondary">
