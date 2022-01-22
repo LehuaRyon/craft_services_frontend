@@ -8,9 +8,6 @@ export const ServiceCard = ({service}) => {
         <div>
             <h3>{service.name}</h3>
             <h4>{service.description}</h4>
-            {/* {service.type.map(type => 
-                <li>{type.name} {type.image}</li>
-            )} */}
             {typeCard}
         </div>
     )
