@@ -22,18 +22,21 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import {NavLink} from 'react-router-dom'
+// import {useState, useEffect} from 'react'
 
 export const ServiceCard = ({service}) => {
+     const id = service.id
+    //  const id = service.match.params.id
+    //  console.log(id)
      const typeCard = service.type.map(type => <TypeCard key={type.id} type={type} />)
 
-     const bull = (
-  <Box
-    component="span"
-    sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-  >
-    •
-  </Box>
-);
+    //  const[chosenService, setChosenService] = useState([])
+     
+    // useEffect(() => {
+    //     const id = chosenService.match.params.id
+    //     setChosenService(id)
+    // }, [])
 
 const card = (
   <React.Fragment>
@@ -42,7 +45,16 @@ const card = (
         Word of the Day
       </Typography> */}
       <Typography variant="h5" component="div">
-        {service.name}
+        <NavLink
+            activeStyle={{
+                fontWeight: "bolder",
+                color: "darkgreen"
+            }}
+                exact
+                // style={style}
+                // to="/services"
+                to={"services/" + id}
+            >{service.name}</NavLink>
       </Typography>
       <Typography sx={{ mb: 1.5 }} color="text.secondary">
         {service.description}
