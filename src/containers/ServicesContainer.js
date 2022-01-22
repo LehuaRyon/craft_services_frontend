@@ -9,6 +9,7 @@ import {ServicesFilter} from '../components/services/ServicesFilter'
 
 export const ServicesContainer = () => {
     const[services, setServices] = useState([])
+    const[searchedServices, setSearchedServices] = useState(services)
 
     // const fetchServices = () => {
     //     fetch("http://localhost:3001/services")
@@ -27,6 +28,7 @@ export const ServicesContainer = () => {
             //  try to fetch something & wait until having something befoe storing inside the resp variable
             const data = await resp.json()
             setServices(data)
+            setSearchedServices(data)
         } catch (error) {
             alert(error)
         }
@@ -40,10 +42,19 @@ export const ServicesContainer = () => {
         fetchServices()
     }, [])
 
+    const handleSearch = (searchValue) => {
+        // recieve what user typed in input
+        const searchedServices = services.filter(service => service.name.toLowerCase().startsWith(searchValue.toLowerCase()) || service.description.toLowerCase().includes(searchValue.toLowerCase()))
+        // filter full list based from that
+        // console.log(filteredServices)
+        // update searchedServices using array returned by filter
+        setSearchedServices(searchedServices)
+    }
+
     return (
         <div>
-            <ServicesFilter />
-            <ServicesList services={services}/>
+            <ServicesFilter handleSearch={handleSearch}/>
+            <ServicesList services={searchedServices}/>
         </div>
     )
 }
