@@ -3,7 +3,7 @@ import './Navbar.css';
 import {NavLink} from 'react-router-dom'
 
 const style = {
-    width: "1000%",
+    width: "100%",
     margin: "5% 0 1%",
     padding: "0.5em 3em",
     textDecoration: "none",
