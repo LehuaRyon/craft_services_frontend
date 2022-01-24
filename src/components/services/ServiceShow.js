@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {useState, useEffect} from 'react'
 import {useParams} from 'react-router-dom'
 import {NavLink} from 'react-router-dom'
+import {ChosenServiceTypeCard} from './ChosenServiceTypeCard'
 
 import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
@@ -20,8 +21,11 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 
 export const ServiceShow = () => {
-    const[chosenService, setChosenService] = useState([])
+    // const[chosenService, setChosenService] = useState([])
+    const[chosenService, setChosenService] = useState({})
+    const[chosenServiceType, setChosenServiceType] = useState([])
     const routeId = useParams().id
+    // const chosenServiceTypeCard = chosenService.type.map(type => <ChosenServiceTypeCard key={type.id} type={type} />)
 
     const [expanded, setExpanded] = React.useState(false);
     const handleExpandClick = () => {setExpanded(!expanded);}
@@ -42,6 +46,7 @@ export const ServiceShow = () => {
             const resp = await fetch(`http://localhost:3001/services/${id}`)
             const data = await resp.json()
             setChosenService(data)
+            setChosenServiceType(data.type)
         } catch (error) {
             alert(error)
         }
@@ -77,7 +82,16 @@ export const ServiceShow = () => {
                 exact
                 // style={style}
                 to={`/services/${parseInt(routeId) + 1}`}
-            >See Next Service</NavLink>
+            >See Next Service</NavLink><br></br>
+    <NavLink
+            activeStyle={{
+                fontWeight: "bolder",
+                color: "darkgreen"
+            }}
+                exact
+                // style={style}
+                to={`/services/${parseInt(routeId) - 1}`}
+            >See Previous Service</NavLink>
       <CardMedia
         component="img"
         height="400"
@@ -110,11 +124,8 @@ export const ServiceShow = () => {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph>Method:</Typography>
-          <Typography paragraph>
-            Heat 1/2 cup of the broth in a pot until simmering, add saffron and set
-            aside for 10 minutes.
-          </Typography>
+          <Typography paragraph>{chosenServiceType.map(type => <ChosenServiceTypeCard key={type.id} type={type} />)}</Typography>
+          {/* <Typography paragraph>{chosenServiceTypeCard}</Typography> */}
           <Typography paragraph>
             Heat oil in a (14- to 16-inch) paella pan or a large, deep skillet over
             medium-high heat. Add chicken, shrimp and chorizo, and cook, stirring
