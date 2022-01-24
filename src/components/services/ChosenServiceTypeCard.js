@@ -25,10 +25,10 @@ export const ChosenServiceTypeCard = ({types}) => {
     //     </ImageListItem>
     // </ImageList>
 
-        <ImageList sx={{ width: "auto", height: "auto" }}>
-            <ImageListItem key="Subheader" cols={2}></ImageListItem>
+        <ImageList sx={{ width: "auto", height: 440 }}>
+            <ImageListItem key="Subheader" cols={8}></ImageListItem>
                 {types.map((type) => (
-                    <ImageListItem key={type.name}>
+                    <ImageListItem key={type.name} sx={{ width: 290, height: "auto" }}>
                     <img
                         src={`${type.image}?w=248&fit=crop&auto=format`}
                         srcSet={`${type.image}?w=248&fit=crop&auto=format&dpr=2 2x`}

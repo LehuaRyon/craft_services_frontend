@@ -62,7 +62,7 @@ export const ServiceShow = () => {
     <Card sx={{ minWidth: 275 }}>
       <CardHeader
         avatar={
-          <Avatar sx={{ bgcolor: green[900] }} aria-label="recipe">
+          <Avatar sx={{ bgcolor: green[900] }} aria-label={chosenService.id}>
             {chosenService.id}
           </Avatar>
         }
@@ -107,20 +107,13 @@ export const ServiceShow = () => {
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
-        </IconButton>
-        <IconButton aria-label="share">
-          <ShareIcon />
-        </IconButton>
         <ExpandMore
           expand={expanded}
           onClick={handleExpandClick}
           aria-expanded={expanded}
           aria-label="show more"
         >
-          <ExpandMoreIcon />
-        </ExpandMore>
+          <ExpandMoreIcon /></ExpandMore>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
