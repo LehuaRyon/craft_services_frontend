@@ -9,37 +9,37 @@
             {
                 "id": 1,
                 "name": "Digital Logos",
-                "image": "images/2.png"
+                "image": "https://images.unsplash.com/photo-1464699908537-0954e50791ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
               },
               {
                 "id": 2,
                 "name": "Worksheet & Planner Templates",
-                "image": "images/2.png"
+                "image": "https://images.unsplash.com/photo-1616430962767-4abeab1dc052?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
               },
               {
                 "id": 3,
                 "name": "Calender Templates",
-                "image": "images/2.png"
+                "image": "https://images.unsplash.com/photo-1633546756442-6f10c28c8360?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
               },
               {
                 "id": 4,
                 "name": "Digital Photo Collages",
-                "image": "images/2.png"
+                "image": "https://images.unsplash.com/photo-1633546756442-6f10c28c8360?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
               },
               {
                 "id": 5,
                 "name": "Digital Postable Prints & Photo Cards",
-                "image": "images/2.png"
+                "image": "https://images.unsplash.com/photo-1633546756442-6f10c28c8360?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
               },
               {
                 "id": 6,
                 "name": "Mugs",
-                "image": "images/2.png"
+                "image": "https://images.unsplash.com/photo-1633546756442-6f10c28c8360?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
               },
               {
                 "id": 7,
                 "name": "T-Shirts",
-                "image": "images/2.png"
+                "image": "https://images.unsplash.com/photo-1633546756442-6f10c28c8360?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
               }
         ]
       },
