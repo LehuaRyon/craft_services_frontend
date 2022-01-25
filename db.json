@@ -176,27 +176,27 @@
             {
                 "id": 1,
                 "name": "Masks: Cotton, Silk",
-                "image": "images/2.png"
+                "image": "https://images.unsplash.com/photo-1586867763684-05933c155795?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
               },
               {
                 "id": 2,
                 "name": "Scrunchies: Cotton, Satin, Silk, Velvet",
-                "image": "images/2.png"
+                "image": "https://images.unsplash.com/photo-1570667268835-9e8a6a652fc9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
               },
               {
                 "id": 3,
                 "name": "Tote Bags: Duck Canvas",
-                "image": "images/2.png"
+                "image": "https://images.unsplash.com/photo-1587918236611-ec03bb9cf4f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
               },
               {
                 "id": 4,
                 "name": "Fanny Packs",
-                "image": "images/2.png"
+                "image": "https://images.squarespace-cdn.com/content/v1/5e056feb3f451a5d4c083223/1577918985465-1QAPRHTTUAFOKWKOB71S/IMG_7297.jpg?format=1000w"
               },
               {
                 "id": 5,
                 "name": "Alterations & Hems",
-                "image": "images/2.png"
+                "image": "https://www.heddels.com/wp-content/uploads/2019/11/how-to-find-a-tailor-image-via-clothes-doctor.jpg"
               }
         ]
       }
