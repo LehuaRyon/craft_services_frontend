@@ -67,9 +67,9 @@ const card = (
             loading="lazy"
         />
        </ImageListItem>
-      {/* <Typography variant="body2">
+      <Typography variant="body2">
         {typeCard}
-      </Typography> */}
+      </Typography>
     </CardContent>
     {/* <CardActions>
       <Button size="small">Learn More</Button>
