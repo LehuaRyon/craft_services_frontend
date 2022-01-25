@@ -23,6 +23,7 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import {NavLink} from 'react-router-dom'
+import ImageListItem from '@mui/material/ImageListItem';
 // import {useState, useEffect} from 'react'
 
 export const ServiceCard = ({service}) => {
@@ -58,9 +59,17 @@ const card = (
       <Typography sx={{ mb: 1.5 }} color="text.secondary">
         {service.description}
       </Typography>
-      <Typography variant="body2">
+       <ImageListItem key={service.name} sx={{ width: 500, height: "auto" }}>
+        <img
+            src={service.homeimage}
+            srcSet={`${service.homeimage}?w=248&fit=crop&auto=format&dpr=2 2x`}
+            alt={service.name}
+            loading="lazy"
+        />
+       </ImageListItem>
+      {/* <Typography variant="body2">
         {typeCard}
-      </Typography>
+      </Typography> */}
     </CardContent>
     {/* <CardActions>
       <Button size="small">Learn More</Button>

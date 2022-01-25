@@ -5,6 +5,7 @@
         "name": "Graphic Design",
         "description": "Graphic design builds an emotional connection with your customers.  I care about the quality of a product as well as visial identity.  I am able to create a design that will make your brand stand out from other competitors.",
         "image": "https://images.unsplash.com/photo-1611241893603-3c359704e0ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "homeimage": "https://images.unsplash.com/photo-1540242908484-50aa09aea5a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
         "type": [
             {
                 "id": 1,
@@ -48,6 +49,7 @@
         "name": "Papercrafts",
         "description": "I am capable of prducting mutiple forms of papercraft.",
         "image": "https://images.unsplash.com/photo-1544377193-33dcf4d68fb5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
+        "homeimage": "https://images.unsplash.com/photo-1516783154360-123b392d0833?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
         "type": [
             {
                 "id": 1,
@@ -96,6 +98,7 @@
         "name": "Stickers",
         "description": "I make stickers by blah.",
         "image": "https://images.unsplash.com/photo-1572950947476-26a6e4111e80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "homeimage": "https://s6n3j7c2.rocketcdn.me/wp-content/uploads/2019/06/Make-Stickers-with-Cricut-c-1024x1024.jpg",
         "type": [
             {
                 "id": 1,
@@ -144,6 +147,7 @@
         "name": "Jewelry",
         "description": "I make blah kinds of jewelry",
         "image": "https://images.unsplash.com/photo-1573227895118-8f8fa1172a09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "homeimage": "https://i1.wp.com/www.jewelryshoot.com/wp-content/uploads/2017/10/how-to-make-jewelry-classes.jpg?fit=1200%2C800&ssl=1",
         "type": [
             {
                 "id": 1,
@@ -172,6 +176,7 @@
         "name": "Sewing",
         "description": "I sew stuff",
         "image": "https://images.unsplash.com/photo-1586579649032-1a9eacebf04a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "homeimage": "https://images.pexels.com/photos/1148963/pexels-photo-1148963.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         "type": [
             {
                 "id": 1,
