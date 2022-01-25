@@ -148,22 +148,22 @@
             {
                 "id": 1,
                 "name": "Necklaces",
-                "image": "images/2.png"
+                "image": "https://storiesofsilversilk.com/wp-content/uploads/2020/05/Handmade-necklace-with-faceted-silver-topaz-and-lapis-lazuli-beads-N01261.jpg"
               },
               {
                 "id": 2,
                 "name": "Earings",
-                "image": "images/2.png"
+                "image": "https://images.unsplash.com/photo-1562838095-8ff19b380189?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
               },
               {
                 "id": 3,
                 "name": "Bracelets",
-                "image": "images/2.png"
+                "image": "https://images.unsplash.com/photo-1597551098966-fbc7db15e8cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
               },
               {
                 "id": 4,
                 "name": "Anklets",
-                "image": "images/2.png"
+                "image": "https://cdn.shopify.com/s/files/1/0552/4481/products/ANK103_EvilEyeStretchAnklet_LifestyleImage_800x800_a5bd795f-0b39-4f9d-8dc8-4c82e3c128c6_450x450.jpg?v=1626440865"
               }
         ]
       },
