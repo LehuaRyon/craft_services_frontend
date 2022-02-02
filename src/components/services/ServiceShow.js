@@ -66,11 +66,11 @@ export const ServiceShow = () => {
             {chosenService.id}
           </Avatar>
         }
-        action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
-        }
+        // action={
+          // <IconButton aria-label="settings">
+          //   <MoreVertIcon />
+          // </IconButton>
+        // }
         title={chosenService.name}
         subheader={chosenService.description}
       />
