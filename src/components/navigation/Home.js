@@ -21,6 +21,8 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import {Header} from '../layout/Header'
+import {Footer} from '../layout/Footer'
 
 const theme = createTheme();
 
@@ -33,6 +35,7 @@ export const Home = () => {
 
   return (      
     <ThemeProvider theme={theme}>
+    <Header storeName="Mariah Ryon's Craft Services"/>
       <Grid container component="main" sx={{ height: '100vh' }}>
         <CssBaseline />
         <Grid
@@ -62,12 +65,14 @@ export const Home = () => {
             <Avatar sx={{ m: 1, bgcolor: '#1b5e20' }}>
                 <HomeIcon />
             </Avatar>
-            <Typography component="h1" variant="h5">
-              Sign in
+            <Typography component="h1" variant="h4">
+                I'm Mariah Ryon and I'm a innovative craftswoman.  I want to help people create or revamp their brand as well as collaborate with people 
+                would like to experiment making specific products.  
             </Typography>
           </Box>
         </Grid>
       </Grid>
+      <Footer />
     </ThemeProvider>
   );
 }
