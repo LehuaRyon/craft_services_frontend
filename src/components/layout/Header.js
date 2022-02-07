@@ -36,7 +36,7 @@ export const Header = ({storeName}) => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar sx={{ bgcolor: "#33691e" }} position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -44,6 +44,8 @@ export const Header = ({storeName}) => {
             noWrap
             component="div"
             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
+            color="#fff9c4"
+            fontWeight="bold"
           >
             {storeName}
           </Typography>
@@ -123,26 +125,26 @@ export const Header = ({storeName}) => {
                 {page}
               </Button>
             ))} */}
-            <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: 'white', display: 'block' }}>
-              <NavLink activeStyle={{ fontWeight: "bolder", color: "white"}} exact style={{color: "lightgrey", textDecoration: "none"}} to="/">Home</NavLink>
+            <Button onClick={handleCloseNavMenu}>
+              <NavLink activeStyle={{ fontWeight: "bolder", color: "#c5e1a5"}} exact style={{color: "lightgrey", textDecoration: "none"}} to="/">Home</NavLink>
             </Button>
-            <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: 'white', display: 'block' }}>
-              <NavLink activeStyle={{ fontWeight: "bolder", color: "white"}} exact style={{color: "lightgrey", textDecoration: "none"}} to="/about">About</NavLink>
+            <Button onClick={handleCloseNavMenu}>
+              <NavLink activeStyle={{ fontWeight: "bolder", color: "#c5e1a5"}} exact style={{color: "lightgrey", textDecoration: "none"}} to="/about">About</NavLink>
             </Button>
-            <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: 'white', display: 'block' }}>
-              <NavLink activeStyle={{ fontWeight: "bolder", color: "white"}} exact style={{color: "lightgrey", textDecoration: "none"}} to="/services">Services</NavLink>
+            <Button onClick={handleCloseNavMenu}>
+              <NavLink activeStyle={{ fontWeight: "bolder", color: "#c5e1a5"}} exact style={{color: "lightgrey", textDecoration: "none"}} to="/services">Services</NavLink>
             </Button>
-            <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: 'white', display: 'block' }}>
-              <NavLink activeStyle={{ fontWeight: "bolder", color: "white"}} exact style={{color: "lightgrey", textDecoration: "none"}} to="/commissions">Commissions</NavLink>
+            <Button onClick={handleCloseNavMenu}>
+              <NavLink activeStyle={{ fontWeight: "bolder", color: "#c5e1a5"}} exact style={{color: "lightgrey", textDecoration: "none"}} to="/commissions">Commissions</NavLink>
             </Button>
-            <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: 'white', display: 'block' }}>
-              <NavLink activeStyle={{ fontWeight: "bolder", color: "white"}} exact style={{color: "lightgrey", textDecoration: "none"}} to="/contact">Contact</NavLink>
+            <Button onClick={handleCloseNavMenu}>
+              <NavLink activeStyle={{ fontWeight: "bolder", color: "#c5e1a5"}} exact style={{color: "lightgrey", textDecoration: "none"}} to="/contact">Contact</NavLink>
             </Button>
-            <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: 'white', display: 'block' }}>
-              <NavLink activeStyle={{ fontWeight: "bolder", color: "white"}} exact style={{color: "lightgrey", textDecoration: "none"}} to="/gallery">Gallery</NavLink>
+            <Button onClick={handleCloseNavMenu}>
+              <NavLink activeStyle={{ fontWeight: "bolder", color: "#c5e1a5"}} exact style={{color: "lightgrey", textDecoration: "none"}} to="/gallery">Gallery</NavLink>
             </Button>
-            <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: 'white', display: 'block' }}>
-              <NavLink activeStyle={{ fontWeight: "bolder", color: "white"}} exact style={{color: "lightgrey", textDecoration: "none"}} to="/shop">Shop</NavLink>
+            <Button onClick={handleCloseNavMenu}>
+              <NavLink activeStyle={{ fontWeight: "bolder", color: "#c5e1a5"}} exact style={{color: "lightgrey", textDecoration: "none"}} to="/shop">Shop</NavLink>
             </Button>
           </Box>
 
