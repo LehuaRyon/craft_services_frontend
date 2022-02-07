@@ -10,7 +10,6 @@ import {Commissions} from './components/navigation/Commissions'
 import {Contact} from './components/navigation/Contact'
 import {Gallery} from './components/navigation/Gallery'
 import {Shop} from './components/navigation/Shop'
-import {Navbar} from './components/layout/Navbar'
 import {Header} from './components/layout/Header'
 import {Footer} from './components/layout/Footer'
 
@@ -21,7 +20,6 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
       </header> */}
       <Router>
-        <Navbar />
         <Header storeName="Mariah Ryon's Craft Services"/>
         <Switch>
           {/* <Route path="/services/graphicdesign">

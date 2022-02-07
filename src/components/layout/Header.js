@@ -11,8 +11,9 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import {NavLink} from 'react-router-dom'
 
-const pages = ['Products', 'Pricing', 'Blog'];
+// const pages = ['Products', 'Pricing', 'Blog'];
 // const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 export const Header = ({storeName}) => {
@@ -22,9 +23,9 @@ export const Header = ({storeName}) => {
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
+  // const handleOpenUserMenu = (event) => {
+  //   setAnchorElUser(event.currentTarget);
+  // };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
@@ -76,11 +77,32 @@ export const Header = ({storeName}) => {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
+              {/* {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
-              ))}
+              ))} */}
+              <MenuItem onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center"><NavLink activeStyle={{fontWeight: "bolder", color: "darkgreen"}} exact style={{color: "brown"}} to="/">Home</NavLink></Typography>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center"><NavLink activeStyle={{fontWeight: "bolder", color: "darkgreen"}} exact style={{color: "brown"}} to="/about">About</NavLink></Typography>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center"><NavLink activeStyle={{fontWeight: "bolder", color: "darkgreen"}} exact style={{color: "brown"}} to="/services">Services</NavLink></Typography>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center"><NavLink activeStyle={{fontWeight: "bolder", color: "darkgreen"}} exact style={{color: "brown"}} to="/commissions">Comissions</NavLink></Typography>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center"><NavLink activeStyle={{fontWeight: "bolder", color: "darkgreen"}} exact style={{color: "brown"}} to="/contact">Contact</NavLink></Typography>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center"><NavLink activeStyle={{fontWeight: "bolder", color: "darkgreen"}} exact style={{color: "brown"}} to="/gallery">Gallery</NavLink></Typography>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center"><NavLink activeStyle={{fontWeight: "bolder", color: "darkgreen"}} exact style={{color: "brown"}} to="/shop">Shop</NavLink></Typography>
+              </MenuItem>
             </Menu>
           </Box>
           <Typography
@@ -92,7 +114,7 @@ export const Header = ({storeName}) => {
             {storeName}
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
+            {/* {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
@@ -100,7 +122,28 @@ export const Header = ({storeName}) => {
               >
                 {page}
               </Button>
-            ))}
+            ))} */}
+            <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: 'white', display: 'block' }}>
+              <NavLink activeStyle={{ fontWeight: "bolder", color: "white"}} exact style={{color: "lightgrey", textDecoration: "none"}} to="/">Home</NavLink>
+            </Button>
+            <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: 'white', display: 'block' }}>
+              <NavLink activeStyle={{ fontWeight: "bolder", color: "white"}} exact style={{color: "lightgrey", textDecoration: "none"}} to="/about">About</NavLink>
+            </Button>
+            <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: 'white', display: 'block' }}>
+              <NavLink activeStyle={{ fontWeight: "bolder", color: "white"}} exact style={{color: "lightgrey", textDecoration: "none"}} to="/services">Services</NavLink>
+            </Button>
+            <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: 'white', display: 'block' }}>
+              <NavLink activeStyle={{ fontWeight: "bolder", color: "white"}} exact style={{color: "lightgrey", textDecoration: "none"}} to="/commissions">Commissions</NavLink>
+            </Button>
+            <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: 'white', display: 'block' }}>
+              <NavLink activeStyle={{ fontWeight: "bolder", color: "white"}} exact style={{color: "lightgrey", textDecoration: "none"}} to="/contact">Contact</NavLink>
+            </Button>
+            <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: 'white', display: 'block' }}>
+              <NavLink activeStyle={{ fontWeight: "bolder", color: "white"}} exact style={{color: "lightgrey", textDecoration: "none"}} to="/gallery">Gallery</NavLink>
+            </Button>
+            <Button onClick={handleCloseNavMenu} sx={{ my: 2, color: 'white', display: 'block' }}>
+              <NavLink activeStyle={{ fontWeight: "bolder", color: "white"}} exact style={{color: "lightgrey", textDecoration: "none"}} to="/shop">Shop</NavLink>
+            </Button>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
