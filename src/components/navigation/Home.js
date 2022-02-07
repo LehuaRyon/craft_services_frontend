@@ -21,7 +21,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import {Header} from '../layout/Header'
+import {Header} from '..//layout/Header'
 import {Footer} from '../layout/Footer'
 
 const theme = createTheme();
@@ -35,7 +35,6 @@ export const Home = () => {
 
   return (      
     <ThemeProvider theme={theme}>
-    <Header storeName="Mariah Ryon's Craft Services"/>
       <Grid container component="main" sx={{ height: '100vh' }}>
         <CssBaseline />
         <Grid
@@ -44,7 +43,7 @@ export const Home = () => {
           sm={4}
           md={7}
           sx={{
-            backgroundImage: 'url(https://images.unsplash.com/photo-1466584241662-8cb021032c1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80)',
+            backgroundImage: 'url(https://images.unsplash.com/photo-1587775772893-c6e4dfaa35bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80)',
             backgroundRepeat: 'no-repeat',
             backgroundColor: (t) =>
               t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
@@ -52,7 +51,7 @@ export const Home = () => {
             backgroundPosition: 'center',
           }}
         />
-        <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
+        <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square bgcolor='#212121'>
           <Box
             sx={{
               my: 8,
@@ -62,17 +61,26 @@ export const Home = () => {
               alignItems: 'center',
             }}
           >
-            <Avatar sx={{ m: 1, bgcolor: '#1b5e20' }}>
-                <HomeIcon />
+            <Avatar sx={{ width: 56, height: 56, bgcolor: '#c5e1a5'}}>
+                <HomeIcon sx={{ color: '#6d4c41'}}/>
             </Avatar>
-            <Typography component="h1" variant="h4">
-                I'm Mariah Ryon and I'm a innovative craftswoman.  I want to help people create or revamp their brand as well as collaborate with people 
-                would like to experiment making specific products.  
+            <Typography component="div" variant="h4" color='#c5e1a5'>
+                <br></br>
+                Hello, I'm Mariah Ryon and I'm a innovative craftswoman.  
+                <br></br>
+                <br></br>
+                I want to help people create or revamp their brand so that they express what really really value and what they are working towards.  
+                <br></br>
+                <br></br>
+                I am open to collaboration as well as experimentation in making specific products that are not listed in my offered services.
             </Typography>
+            {/* <Typography variant="h2" gutterBottom component="div">
+                h2. Heading
+            </Typography> */}
           </Box>
         </Grid>
+        <Footer />
       </Grid>
-      <Footer />
     </ThemeProvider>
   );
 }
