@@ -44,7 +44,7 @@ export const Header = ({storeName}) => {
             noWrap
             component="div"
             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
-            color="#fff9c4"
+            color="Platinum"
             fontWeight="bold"
           >
             {storeName}
@@ -85,25 +85,25 @@ export const Header = ({storeName}) => {
                 </MenuItem>
               ))} */}
               <MenuItem onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center"><NavLink activeStyle={{fontWeight: "bolder", color: "darkgreen"}} exact style={{color: "brown"}} to="/">Home</NavLink></Typography>
+                  <Typography textAlign="center"><NavLink activeStyle={{fontWeight: "bolder", color: "darkgreen"}} exact style={{color: "saddlebrown"}} to="/">Home</NavLink></Typography>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center"><NavLink activeStyle={{fontWeight: "bolder", color: "darkgreen"}} exact style={{color: "brown"}} to="/about">About</NavLink></Typography>
+                  <Typography textAlign="center"><NavLink activeStyle={{fontWeight: "bolder", color: "darkgreen"}} exact style={{color: "saddlebrown"}} to="/about">About</NavLink></Typography>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center"><NavLink activeStyle={{fontWeight: "bolder", color: "darkgreen"}} exact style={{color: "brown"}} to="/services">Services</NavLink></Typography>
+                  <Typography textAlign="center"><NavLink activeStyle={{fontWeight: "bolder", color: "darkgreen"}} exact style={{color: "saddlebrown"}} to="/services">Services</NavLink></Typography>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center"><NavLink activeStyle={{fontWeight: "bolder", color: "darkgreen"}} exact style={{color: "brown"}} to="/commissions">Comissions</NavLink></Typography>
+                  <Typography textAlign="center"><NavLink activeStyle={{fontWeight: "bolder", color: "darkgreen"}} exact style={{color: "saddlebrown"}} to="/commissions">Comissions</NavLink></Typography>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center"><NavLink activeStyle={{fontWeight: "bolder", color: "darkgreen"}} exact style={{color: "brown"}} to="/contact">Contact</NavLink></Typography>
+                  <Typography textAlign="center"><NavLink activeStyle={{fontWeight: "bolder", color: "darkgreen"}} exact style={{color: "saddlebrown"}} to="/contact">Contact</NavLink></Typography>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center"><NavLink activeStyle={{fontWeight: "bolder", color: "darkgreen"}} exact style={{color: "brown"}} to="/gallery">Gallery</NavLink></Typography>
+                  <Typography textAlign="center"><NavLink activeStyle={{fontWeight: "bolder", color: "darkgreen"}} exact style={{color: "saddlebrown"}} to="/gallery">Gallery</NavLink></Typography>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center"><NavLink activeStyle={{fontWeight: "bolder", color: "darkgreen"}} exact style={{color: "brown"}} to="/shop">Shop</NavLink></Typography>
+                  <Typography textAlign="center"><NavLink activeStyle={{fontWeight: "bolder", color: "darkgreen"}} exact style={{color: "saddlebrown"}} to="/shop">Shop</NavLink></Typography>
               </MenuItem>
             </Menu>
           </Box>
@@ -112,6 +112,8 @@ export const Header = ({storeName}) => {
             noWrap
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
+            color="Platinum"
+            fontWeight="bold"
           >
             {storeName}
           </Typography>
